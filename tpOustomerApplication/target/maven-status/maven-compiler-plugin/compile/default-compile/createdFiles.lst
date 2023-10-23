@@ -1,8 +1,0 @@
-ma/school/tpcustomerapplication/entity/Customer.class
-ma/school/tpcustomerapplication/entity/Discount.class
-ma/school/tpcustomerapplication/resources/JakartaEE10Resource.class
-ma/school/tpcustomerapplication/jsf/CustomerBean.class
-ma/school/tpcustomerapplication/entity/MicroMarket.class
-ma/school/tpcustomerapplication/JakartaRestConfiguration.class
-config/ConfigJSF.class
-service/CustomerManager.class
