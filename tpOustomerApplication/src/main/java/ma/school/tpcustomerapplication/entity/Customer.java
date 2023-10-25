@@ -1,13 +1,4 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package ma.school.tpcustomerapplication.entity;
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
-
 
 import jakarta.persistence.Basic;
 import jakarta.persistence.Column;
@@ -197,5 +188,4 @@ public class Customer implements Serializable {
     public String toString() {
         return "ma.school.tpcustomerapplication.entity.Customer[ customerId=" + customerId + " ]";
     }
-    
 }

@@ -1,9 +1,4 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package ma.school.tpcustomerapplication.entity;
-
 import jakarta.persistence.Basic;
 import jakarta.persistence.CascadeType;
 import jakarta.persistence.Column;
@@ -19,58 +14,108 @@ import java.util.Collection;
 
 /**
  *
- * @author MOHAMED
+ * @author ADMIN
  */
 @Entity
-@Table(name = "DISCOUNT")
+@Table(name = "discount")
 @NamedQueries({
     @NamedQuery(name = "Discount.findAll", query = "SELECT d FROM Discount d"),
     @NamedQuery(name = "Discount.findByCode", query = "SELECT d FROM Discount d WHERE d.code = :code"),
     @NamedQuery(name = "Discount.findByRate", query = "SELECT d FROM Discount d WHERE d.rate = :rate")})
 public class Discount implements Serializable {
 
+    /**
+     *
+     */
     private static final long serialVersionUID = 1L;
+
+    /**
+     *
+     */
     @Id
     @Basic(optional = false)
     @Column(name = "CODE")
     private String code;
     // @Max(value=?)  @Min(value=?)//if you know range of your decimal fields consider using these annotations to enforce field validation
+
+    /**
+     *
+     */
     @Column(name = "RATE")
     private BigDecimal rate;
-    @OneToMany(cascade = CascadeType.ALL, mappedBy = "discountCode")
+
+    /**
+     *
+     */
+    @OneToMany(cascade = CascadeType.ALL, mappedBy = "discount")
     private Collection<Customer> customerCollection;
 
+    /**
+     *
+     */
     public Discount() {
     }
 
+    /**
+     *
+     * @param code
+     */
     public Discount(String code) {
         this.code = code;
     }
 
+    /**
+     *
+     * @return
+     */
     public String getCode() {
         return code;
     }
 
+    /**
+     *
+     * @param code
+     */
     public void setCode(String code) {
         this.code = code;
     }
 
+    /**
+     *
+     * @return
+     */
     public BigDecimal getRate() {
         return rate;
     }
 
+    /**
+     *
+     * @param rate
+     */
     public void setRate(BigDecimal rate) {
         this.rate = rate;
     }
 
+    /**
+     *
+     * @return
+     */
     public Collection<Customer> getCustomerCollection() {
         return customerCollection;
     }
 
+    /**
+     *
+     * @param customerCollection
+     */
     public void setCustomerCollection(Collection<Customer> customerCollection) {
         this.customerCollection = customerCollection;
     }
 
+    /**
+     *
+     * @return
+     */
     @Override
     public int hashCode() {
         int hash = 0;
@@ -78,6 +123,11 @@ public class Discount implements Serializable {
         return hash;
     }
 
+    /**
+     *
+     * @param object
+     * @return
+     */
     @Override
     public boolean equals(Object object) {
         // TODO: Warning - this method won't work in the case the id fields are not set
@@ -91,9 +141,13 @@ public class Discount implements Serializable {
         return true;
     }
 
+    /**
+     *
+     * @return
+     */
+
     @Override
     public String toString() {
         return "ma.school.tpcustomerapplication.entity.Discount[ code=" + code + " ]";
     }
-    
 }
