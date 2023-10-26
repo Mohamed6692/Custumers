@@ -1,8 +1,11 @@
 /Users/MOHAMED/Documents/tpOustomerApplication/src/main/java/ma/school/tpcustomerapplication/entity/Discount.java
 /Users/MOHAMED/Documents/tpOustomerApplication/src/main/java/ma/school/tpcustomerapplication/entity/Customer.java
+/Users/MOHAMED/Documents/tpOustomerApplication/src/main/java/ma/school/tpcustomerapplication/jsf/DiscountConverter.java
+/Users/MOHAMED/Documents/tpOustomerApplication/src/main/java/ma/school/tpcustomerapplication/jsf/customerDetailsBean.java
 /Users/MOHAMED/Documents/tpOustomerApplication/src/main/java/ma/school/tpcustomerapplication/jsf/CustomerBean.java
 /Users/MOHAMED/Documents/tpOustomerApplication/src/main/java/ma/school/tpcustomerapplication/JakartaRestConfiguration.java
 /Users/MOHAMED/Documents/tpOustomerApplication/src/main/java/service/CustomerManager.java
+/Users/MOHAMED/Documents/tpOustomerApplication/src/main/java/service/DiscountManager.java
 /Users/MOHAMED/Documents/tpOustomerApplication/src/main/java/ma/school/tpcustomerapplication/entity/MicroMarket.java
 /Users/MOHAMED/Documents/tpOustomerApplication/src/main/java/config/ConfigJSF.java
 /Users/MOHAMED/Documents/tpOustomerApplication/src/main/java/ma/school/tpcustomerapplication/resources/JakartaEE10Resource.java
